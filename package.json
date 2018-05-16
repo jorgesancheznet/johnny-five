@@ -1,12 +1,12 @@
 {
-  "name": "johnny",
+  "name": "ejemplos-johnny-five",
   "version": "1.0.0",
   "description": "",
-  "main": "blink.js",
+  "main": "app-blink.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jorgeç",
+  "author": "Jorge Sanchez",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",

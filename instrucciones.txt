@@ -1,6 +1,0 @@
-(instalar .net Framework sdk 2.0)
-(Ejecutar como administrador)
-npm install --global windows-build-tools
-npm install -g node-gyp
-npm install johnny-five express socket.io --save
-(En arduino, lanzar el ejemplo StandardFirmData)
