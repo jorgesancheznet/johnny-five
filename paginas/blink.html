@@ -11,17 +11,19 @@
 <button id="parpadear">Parpadeo</button>
 <button id="parar">Parar</button>
 <script src="jquery.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
 <script>
 $(function(){
 
-    var socket=io();
-    $("#parpadear").on("click",function(){
+    var socket=io.connect("http://localhost:3000");
+    $("#parpadear").on("click",function(e){
         socket.emit("blink");
-    })
-    $("#parar").on("click",function(){
+        e.preventDefault();
+    });
+    $("#parar").on("click",function(e){
         socket.emit("stop");
-    })
+        e.preventDefault();
+    });
 })
 </script>
 </body>
